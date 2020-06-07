@@ -58,15 +58,27 @@ console.log(`Está fazendo sol: ${!sol}`);
 let resposta = Math.random() * 10 > 5 ? "Sim" : "não"
 console.log('Operador ternário:', resposta)
 
-
-switch (4) {
+//Math.Round arredonda o número
+let num = Math.random() * 5
+switch (Math.round(num)) {
     case 1:
         console.log("Deu 1")
         break;
-    case 2:
-        console.log("Deu 2")
+        
+        case 2:
+            console.log("Deu 2")
+            break;
+            
+            case 3:
+        console.log("Deu 3")
+        break;
+
+        case 4:
+        console.log("Deu 4")
         break;
 
     default:
         console.log('Switch:', "Resultado padrão")
 }
+
+console.log('Exponenciação: ', 2**3)

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo!</title>
+</head>
+
+<body>
+    <h1>Me conta sua história</h1>
+    <dialog id="idDialog">
+        <p>Desculpe, seu tempo acabou.</p>
+    </dialog>
+
+    <h3>Meta: 200 caracteres :D</h3>
+
+    <p>
+        <textarea onkeyup="contagem(this,'idLbl','idMeter')" id="idTxt" rows="20"
+            cols="50">Sou uma pessoa ...... </textarea>
+    </p>
+    <p>
+        Caracteres: <label id='idLbl'></label>
+    </p>
+    <p>
+        <meter id='idMeter' min='0' max='200'></meter>
+    </p>
+    <p>
+        <progress id="idPB" max="100" value="0"></progress>
+    </p>
+
+
+    <script src='js/txtareaemeter.js'></script>
+</body>
+
+</html>

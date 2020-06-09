@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão e caixa de texto</title>
+</head>
+
+<body>
+    <h1>Testando botão e caixa de texto </h1>
+    <div>
+        Escolha a música que você mais gosta: <br><br>
+        1 - Sweet child o'mine - Guns N'Roses <br>
+        2 - Recairei - Barões da pisadinha <br>
+        3 - What goes around... comes around - Justin Timberlake <br>
+        4 - Just a dream - Nelly <br>
+        <br>
+        Escolha apenas um número:
+        <br>
+        <input id="escolha" type="number" style="width: 20px;" value=""> <br>
+
+        <button onclick="responder('escolha', 'mensagem')">Enviar escolha</button><br>
+        <br>
+        Resposta:<br>
+        <br>
+        <input id='mensagem' readonly type='txt' style="width: 350px;"><br>
+    </div>
+    <script src='js/nodes.js'> </script>
+    <script src='js/buscadom.js'> </script>
+    <script src='js/contadom.js'> </script>
+    <script src='js/resposta.js'> </script>
+
+</body>
+
+</html>

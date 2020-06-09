@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão e caixa de texto</title>
+</head>
+
+<body>
+    <h1>Sua música </h1>
+    <h2>Escolha uma música:</h2>
+
+    <select id="selecao">
+        <option value="1">Sweet child o'mine - Guns N'Roses</option>
+        <option value="2">Recairei - Barões da pisadinha</option>
+        <option value="3">What goes around - Justin Timberlake</option>
+    </select>
+    <p>
+
+        <button onclick="responder('selecao', 'mensagem')">Enviar escolha</button>
+
+    </p>
+
+    Resposta:
+
+    <p>
+        <label id='mensagem'> </label>
+    </p>
+
+    <script src='js/resposta2.js'> </script>
+
+</body>
+
+</html>

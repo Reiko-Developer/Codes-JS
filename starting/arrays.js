@@ -25,3 +25,20 @@ predio.push(["Adélia", "Cora"]);
 predio.push(["Hilda", "Cecília"]);
 
 console.log(predio[1][0])
+
+array = [
+    ['SCRPT', 3],
+    ['HTML', 7],
+    ['Duda', 6],
+    ['Andrea',3]
+]
+
+tmp = 'Duda'
+
+for (let i = 0; i < array.length; i++) {
+    if (array[i][0] === tmp){
+        array[i][1] += 1
+    }
+}
+
+console.log(array)

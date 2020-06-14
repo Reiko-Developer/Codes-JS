@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Jogo da Forca</title>
+    <link href="desafio09.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="div-wo-border">
+        <h1>Brincadeira da forca - Descubra a Palavra</h1>
+    </div>
+    <div class="div-wo-border">
+        <button id="idBtn" type="button" onclick="geraPalavra('table')">Gerar Palavra</button>
+    </div>
+    <br>
+    <div class="div-wo-border">
+        <table id="table" style=" width:100%; ">
+            <tbody>
+                <tr>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="div-win">
+    </div>
+    <div class="div-w-border">
+        <label id="lbl-tente " for="txt-tente ">Tente uma letra:</label>
+
+        <input id="txt-tente" name="txt-tente" type="text" maxlength="1" size=" 1px " placeholder="Ex: 'a'"
+            pattern="[A-Za-z]+" autocomplete="off">
+
+        <label id="lblVidas" for="txt-vidas">Vidas restantes:</label>
+
+        <input type="text" id="txt-vidas" name="txt-vidas" readonly size="1px">
+    </div>
+    <div class="div-wo-border">
+
+        <button type="submit" title="clique" onclick="jogar('#txt-tente') ">jogar</button>
+    </div>
+
+
+</body>
+<script src="desafio09.js "></script>
+
+</html>

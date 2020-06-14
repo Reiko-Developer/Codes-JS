@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes por época</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <h1 class="text-center p-5">Opções</h1>
+    <div class="container p-3 text-info border">
+        Veja o filme que marcou a sua época e clique no link para ter mais informações sobre o mesmo.
+    </div>
+
+    <div class="container p-3">
+        <label>informe sua idade:</label>
+        <input id="inputId" type="number" min="10" max="110">
+        <button onclick="habilita('#inputId')" class="btn btn-primary">Enviar</button>
+    </div>
+    <div class="container p-3">
+        <a id="90" href="#" style="color:gray;">Titanic</a>
+        <br><br>
+        <a id="00" href="#" style="color:gray;">Enemy at the gates</a>
+        <br><br>
+        <a id="10" href="#" style="color:gray;">Vingadores: Ultimato</a>
+        <br><br>
+        <a id="20" href="#" style="color:gray;">Resgate</a>
+
+    </div>
+    <script src="filmes.js"></script>
+</body>
+
+</html>

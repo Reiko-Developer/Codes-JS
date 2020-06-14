@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center p-5">Formulário</h1>
+    </header>
+    <form class="conteiner" action="">
+        <div class="form-group">
+            <label > Qual é o seu nome?</label>
+            <input id="txtNome" type="text" class="form-control" placeholder="Nome">
+            <small id="helpNome" class="text-muted">Nome e sobrenome</small>
+        </div>
+        <div class="form-group">
+            <label>Qual seu endereço?</label>
+            <input id="txtEndereco" type="text" class="form-control" placeholder="Endereço">
+            <small id="helpEndereco" class="text-muted">Endereço completo</small>
+        </div>
+
+        <div class="form-group">
+            <label>Qual é a sua idade?</label>
+            <input id="txtIdade" type="text" class="form-control" placeholder="Idade">
+            <small id="helpIdade" class="text-muted">Em anos</small>
+        </div>
+
+        <div class="pt-4">
+            <button type="button" onclick="verifica()" class="btn btn-primary">Salvar</button>
+            <button type="button" class="btn btn-secundary">Cancelar</button>
+
+        </div>
+    </form>
+    <script src="formulario.js"></script>
+
+</body>
+
+</html>

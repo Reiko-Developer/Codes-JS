@@ -8,7 +8,7 @@ for (let i = 0; i < numTiros; i++) {
     alvo = Math.round(Math.random() * 6)
     tiro = Math.round(Math.random() * 6)
 
-    switch (diff(alvo, tiro)) {
+    switch (diff(alvo, tiro)) { //poderis usar a função Math.abs
         case 0:
             pontos += 1500
             console.log(`Distância 0 – Acertou em cheio ! – 1.500 pontos`)

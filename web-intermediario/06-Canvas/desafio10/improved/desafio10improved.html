@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Paint Challenge</title>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'>
+</head>
+
+<body >
+    <header class="p-2 text-center" style="background-color: powderblue;">
+        <h1>Drawing :D</h1>
+        <div>
+            Height: <input id="alt" class="border"> 
+            Width: <input id="larg" class="border">
+        </div>
+    </header>
+
+    <!-- div superior -->
+    <div id='comandos' class='border small text-muted'>
+        <div class="row text-center">
+            <div class=col>
+                <small>X Position</small>
+            </div>
+            <div class="col">
+                <small>Y Position </small>
+            </div>
+            <div class="col">
+                <small>Line Thickness</small>
+            </div>
+            <div class="col">
+                <small>Line style</small>
+            </div>
+            <div class="col">
+                <small>Line fill</small>
+            </div>
+            <div class="col">
+                <small for='font-f'>Font family</small>
+            </div>
+            <div class="col">
+                <small for='font-s'>Font size</small>
+            </div>
+            <div class="col">
+                <small for='text'>Text to show</small>
+            </div>
+        </div>
+        <div class="row text-center p-1">
+            <div class="col">
+                <input class="small" id='x-pos' type="number">
+            </div>
+            <div class="col">
+                <input class="small" id='y-pos' type="number">
+            </div>
+            <div class="col">
+                <input class="small" id='line-t' type='number'>
+            </div>
+            <div class="col">
+                <input class="small" id='line-s'>
+            </div>
+            <div class="col">
+                <input class="small" id='line-f'>
+            </div>
+            <div class="col">
+                <input class="small" id='font-f'>
+            </div>
+            <div class="col">
+                <input class="small" id='font-s' type="number">
+            </div>
+            <div class='col'>
+                <input class="small" id='text' title='Coloque um texto aqui' placeholder='Ex.: "Lucas"'>
+            </div>
+        </div>
+    </div>
+
+    <!-- div canvas -->
+    <div class="w-75 p-2 mx-auto">
+        <canvas id="canvas" class="w-100 border col-11" style="background-color: lightgray;" width='1920' height='1080'></canvas>
+    </div>
+
+    <!-- div inferior -->
+    <div class="p-2 text-center" style="background-color: lightgray;">
+        <div class="row">
+            <div class='col'>
+                <label>X:</label>
+                <input id='txt-x' value="0" class='small w-25'>
+                <label>Y:</label>
+                <input id='txt-y' value="0" class='small w-25'>
+            </div>
+            <div class="col">
+                <label>Largura:</label>
+                <input id='txt-larg' class="small w-25" type='number' value="3">
+                <label>Altura:</label>
+                <input id='txt-alt' class="small w-25" type='number' value="3">
+            </div>
+            <div class='col'>
+                <label>Radius (size)</label>
+                <input id='txt-rad' small="small w-25" type='number' value="10">
+            </div>
+            <div class="col">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-primary" onclick="drawLine()">Draw Line</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-info" onclick="drawRect()">Draw Rect</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-danger" onclick="drawCircle()">Draw Circle</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-dark" onclick="drawText()">Draw Text</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="desafio10.js"></script>
+
+</html>

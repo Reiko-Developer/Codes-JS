@@ -20,7 +20,7 @@ function cryptString(str, b) {
     //Se b então é pra criptografar
     if (b) {
         for (let i = 0; i < str.length; i++) {
-            aux += str[str.length - i - 1] + getSpecialChar()
+            aux += str[str.length - i - 1] + adicionaLixo()
         }
         return aux
     } else {
@@ -56,10 +56,8 @@ function cryptString(str, b) {
     }
 }
 
-
 // console.log("Without special chars", array)
-
-function getSpecialChar() {
+function adicionaLixo() {
     const num = Math.round(Math.random() * 9) // !@#$%¨&*+'
     switch (num) {
         case 0:
@@ -82,5 +80,3 @@ function getSpecialChar() {
             return "'"
     }
 }
-
-// console.log(final)

@@ -8,16 +8,24 @@
     <link rel="stylesheet" href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'>
 </head>
 
-<body style="background-color: gray;">
-    <h1 class="text-center p-2">Pintando o Set!</h1>
+<body>
+    <h1 class="p-2">Pintando o Set!</h1>
 
-    <div class="=p-2">
+    <div class="w-100 p-2">
         <label id="lbl-altura"></label>
         <label id="lbl-largura"></label>
     </div>
 
+    <div class="w-80 p-2">
+        <canvas id='meuCanvas' name='canvas' class="w-100 border" width="1920" height="600"></canvas>
+    </div>
     <div class="p-2">
-        <canvas id='meuCanvas' name='canvas' class="w-100 p-2 border"></canvas>
+
+        <button class="btn btn-primary" onclick="drawLine()">Draw Line</button>
+        <button class="btn btn-info" onClick="drawRect()">Draw Rectangle</button>
+        <button class="btn btn-danger" onclick="drawArc()">Draw Circle</button>
+        <button class='btn' style="color:white; background-color:gray" onClick='drawText()'>Draw Text</button>
+
     </div>
 </body>
 <script src="canvas.js"></script>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Paint Challenge</title>
+    <link rel='stylesheet' href='desafio10.css'>
+</head>
+
+<body class="text-center">
+    <div>
+        <h1 class="text-center">Drawing :D</h1>
+        Altura <input id="alt" style="width: 5vw;"> Largura <input id="larg" style="width: 5vw;">
+        <p></p>
+    </div>
+    <div>
+        <div class="c-8">
+            <label for='x-pos'>X Position</label>
+            <input id='x-pos' name='x-pos' type="number" value='0'>
+        </div>
+        <div class="c-8">
+            <label for='y-pos'>Y Position </label>
+            <input id='y-pos' name='y-pos' type="number">
+        </div>
+        <div class="c-8">
+            <label for='line-t'>Line Thickness</label>
+            <input id='line-t' name='line-t' type='number'>
+        </div>
+        <div class="c-8">
+            <label for='line-s'>Line style</label>
+            <input id='line-s' name='line-s'>
+        </div>
+        <div class="c-8">
+            <label for='line-f'>Line fill</label>
+            <input id='line-f' name='line-f'>
+        </div>
+
+        <div class="c-8">
+            <label for='font-f'>Font family</label>
+            <input id='font-f' name='font-f'>
+        </div>
+
+        <div class="c-8">
+            <label for='font-s'>Font size</label>
+            <input id='font-s' name='font-s' type="number">
+        </div>
+        <div class="c-8">
+            <label for='text'>Text to show</label>
+            <input id='text' name='text' title='Coloque um texto aqui' placeholder='Ex.: "Lucas"'>
+        </div>
+    </div>
+
+    <canvas id="canvas" name="canvas" style="width:700px; height:400px; background-color: white;">
+    </canvas>
+
+    </canvas>
+    <div class="border">
+        <div class="c-4">
+            <label for="txt-x">X</label>
+            <input id='txt-x' name='txt-x' type='number' value="0" class='input'>
+            <br>
+            <label for="txt-y">Y</label>
+            <input id='txt-y' name='txt-y' type='number' value="0" class='input'>
+            <br>
+            <button id='btn-draw-line' onclick='drawLine()' style="background-color: royalblue;">Draw Line</button>
+        </div>
+        <div class="c-4">
+            <label for="txt-larg">Largura:</label>
+            <input id='txt-larg' name='txt-larg' type='number' value="3">
+            <br>
+            <label for="txt-alt">Altura:</label>
+            <input id='txt-alt' name='txt-alt' type='number' value="3">
+            <br>
+            <button id="btn-draw-rect" onClick="drawRect()" style="background-color: rgb(62, 148, 62);">Draw
+                Rect</button>
+        </div>
+        <div class='c-4'>
+            <p></p>
+            <label for="txt-rad">Radius (size)</label>
+            <input id='txt-rad' name='txt-rad' type='number' value="10">
+            <button id="btn-draw-rect" onclick="drawCircle()" style="background-color: darkcyan;">Draw Circle</button>
+            <br>
+        </div>
+        <div class="c-4">
+            <br>
+            <button style='background-color: tomato;' type="button" onclick="drawText()">Draw Text</button>
+            <br>
+            <br>
+        </div>
+    </div>
+</body>
+<script src="desafio10.js"></script>
+
+</html>

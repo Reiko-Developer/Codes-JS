@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    background-color: rgba(185, 213, 247, 0.705);
+}
+
+/* Create four equal columns that floats next to each other */
+
+.c-8 {
+    float: left;
+    width: 12.5%;
+    padding: 10px;
+    background-color: powderblue;
+}
+
+.c-4 {
+    float: left;
+    width: 25%;
+    padding: 20px;
+    background-color: powderblue;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .c-8 {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 320px) {
+    .c-8 {
+        width: 100%;
+    }
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .c-4 {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 320px) {
+    .c-4 {
+        width: 100%;
+    }
+}
+
+input {
+    width: 10vw;
+    text-align: center;
+}
+
+label {
+    font-style: italic;
+    max-width: 1px;
+    overflow: hidden;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.iten-center {
+    align-items: center;
+}
+
+.center {
+    align-items: center;
+    text-align: center;
+}
+
+/* Create four equal columns that floats next to each other */
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 300px;
+    /* Should be removed. Only for demonstration */
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.border {
+    border: 3px solid #8684f1;
+}

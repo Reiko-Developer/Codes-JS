@@ -44,7 +44,7 @@ function init() {
     y = document.querySelector('#txt-y')
     larg = document.querySelector('#txt-larg')
     alt = document.querySelector('#txt-alt')
-    radius = document.querySelector('#txt-rad')
+    radius = document.querySelector('#txt-rad')   
 
 }
 
@@ -71,9 +71,6 @@ function drawRect() {
 
     context.stroke()
     context.fill()
-
-    console.log("Chamou drawRect()");
-
 }
 
 function drawCircle() {
@@ -86,7 +83,6 @@ function drawCircle() {
 
     context.stroke()
     context.fill()
-
 }
 
 function drawText() {
@@ -101,6 +97,5 @@ function drawText() {
 
     context.stroke()
     context.fill()
-
 }
 
